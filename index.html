@@ -1,92 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="dist/output.css">
     <title>Royal Rides</title>
 </head>
-<body class="">
+
+<body class="bg-gray-100">
     <nav class="bg-blue-950 pb-4">
-        <div class="flex justify-between items-center h-16">
-          <!-- Left side: Logo and text -->
-          <div class="flex items-center pl-15">
-            <img class="h-15 w-15 mr-2" 
-            src="/assets/logo.png" 
-            alt="Logo"
-            style="max-width: 25%; height: auto;">
-            <span class="font-bold text-xl text-white">NU-Royal Rides</span>
-          </div>
-          <!-- Right side: Login and Signup -->
-          <div class="pr-15">
-            <a href="#" class="text-white hover:text-gray-800 px-3">Login</a>
-            <a href="#" class="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600">Signup</a>
-          </div>
+        <div class="flex justify-between items-center h-16 px-10">
+            <div class="flex items-center space-x-4">
+                <img class="h-16 w-16 object-contain" src="assets/logo.png" alt="Logo"> <!-- Enlarged logo -->
+                <span class="font-bold text-xl text-white">NU-Royal Rides</span>
+            </div>
+            <div>
+                <a href="#" class="text-white hover:text-gray-300 px-3">Login</a>
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <div class="w-full h-[60vh]">
-        
-        <img src="/assets/car.gif" alt="Moving Car" class="w-full h-full object-cover filter brightness-50">
-        <div class="absolute inset-0 flex flex-col items-center justify-center pb-60">
-            <h1 class="text-white text-7xl font-bold mb-4 pb-5">NU-Royal Rides</h1>
-            <button class=" text-white px-5 py-0.3 rounded " > 
-              <img src="assets/RentNow.png" alt="">
+    <div class="relative w-full h-[60vh]">
+        <img src="assets/car.gif" alt="Moving Car" class="w-full h-full object-cover brightness-50">
+        <div class="absolute inset-0 flex flex-col items-center justify-end pb-12"> 
+            <button>
+                <img src="assets/RentNow.png" alt="Rent Now Button" class="w-40">
             </button>
-      </div>
-
-
-      <div class="bg-blue-950 pb-5">
-        <div class="w-full">
-          <h1 class="text-white text-7xl text-center font-bold mb-4 pt-5">DONT JUST RENT ANY CAR.</h1>
-          <h1 class="text-white text-7xl text-center font-bold mb-4">RENT A PERFECT CAR.</h1>
-          <p class="text-white text-center mb-8 pt-2.5">Premium car rental at affordable rates. Nationwide</p>
         </div>
-      </div>
+    </div>
 
-      <div class="bg-gray-300 pb-5">
-        <div class="w-full">
-          <h2 class="text-black text-7xl font-bold mb-4 pt-5 pl-15">NEW ARRIVALS</h2>
-          
-            <!-- add 3 cards here -->
-        </div>
-      </div>
+    <div class="bg-blue-950 text-center py-16">
+        <h1 class="text-white text-7xl md:text-9xl font-bold mb-6">DON'T JUST RENT ANY CAR.</h1>
+        <h1 class="text-white text-7xl md:text-9xl font-bold">RENT A PERFECT CAR.</h1>
+        <p class="text-white mt-6 text-2xl md:text-3xl">Drive in Style - Luxury Rentals, Affordable Rates, Nationwide.</p>
+    </div>
 
-      <div class="flex justify-center gap-8 px-10 pr-25 pl-25">
-        <!-- Car 1 -->
-        <div class="bg-white p-5 shadow-lg rounded-lg w-64 inline-block m-4  ">
-          <img src="/assets/car1.png" alt="911 GT3" class="w-full h-250 object-cover rounded">
-          <h3 class="text-lg font-bold mt-3">1911 GT3</h3>
-          <p class="text-gray-600">The aerodynamic design, featuring a large rear wing and aggressive styling, ensures optimal downtones and stability at high speeds.</p>
-        </div>
-      
-        <!-- Car 2 -->
+    <div class="bg-gray-300 text-center py-10">
+        <h2 class="text-black text-4xl font-bold">NEW ARRIVALS</h2>
+    </div>
+
+    <div class="flex justify-center gap-8 px-10 py-10">
         <div class="bg-white p-5 shadow-lg rounded-lg w-1/4">
-          <img src="/assets/car2.png" alt="SPECTRE" class="w-full h-250 object-cover rounded">
-          <h3 class="text-lg font-bold mt-3">ROYALBOYCE | SPECTRE</h3>
-          <p class="text-gray-600">Powered by a state-of-the-art electric drivetrain, the Spectre delivers instant torque and a whisper-sque ride, with an estimated range of over 380 miles on a single change.</p>
+            <img src="assets/car1.png" alt="911 GT3" class="w-full h-60 object-cover rounded">
+            <h3 class="text-lg font-bold mt-3">PORSCHE | 911 GT3</h3>
+            <p class="text-gray-600 mt-2 ml-4">A high-performance sports car built for speed and precision. With a powerful 4.0L flat-six engine, aerodynamic design, and a large rear wing, the 911 GT3 delivers outstanding stability, sharp handling, and an exhilarating driving experience on both road and track.</p>
         </div>
-      
-        <!-- Car 3 -->
-        <div class="bg-white p-5 shadow-lg rounded-lg w-1/4">
-          <img src="/assets/car3.png" alt="VEYRON" class="w-full h-250 object-cover rounded">
-          <h3 class="text-lg font-bold mt-3">BUGATTI | VEYRON</h3>
-          <p class="text-gray-600">A perfect blend of aerodynamics and elegance, with its iconic carven, massive air inflexive, and agnostic Bugatti grills. But wheel-drive systems and advanced engineering ensure stability and control even at extreme speeds.</p>
-        </div>
-      </div>
 
-      
-      <footer class="bg-blue-950 text-white py-4">
-        <div class="container mx-auto text-left">
-          <img src="assets/logo.png" alt="">
-          <h3 class="text-lg font-bold">Group Members</h3>
-          <p class="mt-2">Consul, Miggy C.</p>
-          <p>Legaspi, Sean Martin G.</p>
-          <p>Ramos, Leovik</p>
-          <p>Alejandro, Dirk Kobe</p>
-        </div> 
-        <img src="assets/fblogo.png" alt="">
-        <img src="assets/githublogo.png" alt="">
-      </footer>
-  </body>
+        <div class="bg-white p-5 shadow-lg rounded-lg w-1/4">
+            <img src="assets/car2.png" alt="SPECTRE" class="w-full h-60 object-cover rounded">
+            <h3 class="text-lg font-bold mt-3">ROLLS-ROYCE | SPECTRE</h3>
+            <p class="text-gray-600 mt-2 ml-4">Experience the future of luxury with the Rolls-Royce Spectre, a masterpiece of elegance, innovation, and power. This all-electric luxury coupe delivers a whisper-quiet yet powerful ride, combining cutting-edge technology with the signature comfort and prestige of Rolls-Royce.</p>
+        </div>
+
+        <div class="bg-white p-5 shadow-lg rounded-lg w-1/4">
+            <img src="assets/car3.png" alt="VEYRON" class="w-full h-60 object-cover rounded">
+            <h3 class="text-lg font-bold mt-3">BUGATTI | VEYRON</h3>
+            <p class="text-gray-600 mt-2 ml-4">Live the ultimate supercar experience with the Bugatti Veyron, a masterpiece of power, speed, and luxury. Featuring a 1,001 HP W16 engine, this beast accelerates from 0 to 100 km/h in just 2.5 seconds—delivering an adrenaline rush like no other.</p>
+        </div>
+    </div>
+
+    <footer class="bg-blue-950 text-white py-6 px-10">
+        <div class="container mx-auto flex justify-between items-start">
+            <div>
+                <img src="assets/logo.png" alt="Logo" class="mb-4 h-16 w-16 object-contain">
+                <h3 class="text-lg font-bold">Group Members</h3>
+                <p class="mt-2">Consul, Miggy C.</p>
+                <p>Legaspi, Sean Martin G.</p>
+                <p>Ramos, Leovik</p>
+                <p>Alejandro, Dirk Kobe</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#"><img src="assets/fblogo.png" alt="Facebook Logo" class="w-8"></a>
+                    <a href="#"><img src="assets/githublogo.png" alt="GitHub Logo" class="w-8"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
